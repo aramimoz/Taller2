@@ -19,6 +19,7 @@ server = app.server
 app.config.suppress_callback_exceptions = True
 
 # Carga los datos históricos y el pronóstico de energía.
+# Otro comentario para que se vean los cambios!! :) 
 def load_data():
     df = pd.read_csv("datos_energia.csv")
     df["time"] = pd.to_datetime(df["time"])
